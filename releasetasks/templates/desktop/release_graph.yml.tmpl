@@ -155,10 +155,6 @@ tasks:
             {{ updateVerify_task(plat)|indent(4) }}
         {% endfor %}
 
-        {% macro email_localtest() %}
-            {% include "emails/localtest.yml.tmpl" %}
-        {% endmacro %}
-        {{ email_localtest()|indent(4) }}
     {% endif %}
 
     # push to mirrors
